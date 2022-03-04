@@ -98,7 +98,7 @@ exports.update = async function (req, res) {
 };
 
 
-// Retrieve all Tutorials from the database.
+// Retrieve all Order from the database according to specific interval.
 exports.findAllInterval = (req, res) => {
     const interval = req.query.interval;
     var condition = MOD(value, interval) == 0;
